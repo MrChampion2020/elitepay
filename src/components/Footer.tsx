@@ -102,12 +102,14 @@ const Footer: React.FC = () => {
                       position: 'relative'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.color = 'white';
-                      e.target.style.textShadow = '0 0 10px rgba(147, 51, 234, 0.5)';
+                      const target = e.target as HTMLElement;
+                      target.style.color = 'white';
+                      target.style.textShadow = '0 0 10px rgba(147, 51, 234, 0.5)';
                     }}
                     onMouseLeave={(e) => {
-                      e.target.style.color = '#d1d5db';
-                      e.target.style.textShadow = 'none';
+                      const target = e.target as HTMLElement;
+                      target.style.color = '#d1d5db';
+                      target.style.textShadow = 'none';
                     }}
                   >
                     {link}
@@ -149,12 +151,14 @@ const Footer: React.FC = () => {
                       transition: 'all 0.3s ease'
                     }}
                     onMouseEnter={(e) => {
-                      e.target.style.color = 'white';
-                      e.target.style.textShadow = '0 0 10px rgba(147, 51, 234, 0.5)';
+                      const target = e.target as HTMLElement;
+                      target.style.color = 'white';
+                      target.style.textShadow = '0 0 10px rgba(147, 51, 234, 0.5)';
                     }}
                     onMouseLeave={(e) => {
-                      e.target.style.color = '#d1d5db';
-                      e.target.style.textShadow = 'none';
+                      const target = e.target as HTMLElement;
+                      target.style.color = '#d1d5db';
+                      target.style.textShadow = 'none';
                     }}
                   >
                     {link}

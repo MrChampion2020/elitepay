@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Logo from "../assets/logo.png";
 
 interface NavItem {
   label: string;
@@ -48,15 +47,21 @@ const Navbar: React.FC = () => {
           alignItems: 'center',
           gap: '0.5rem'
         }}>
-          <img 
-            src={Logo} 
-            alt="ElitePay Logo" 
-            style={{
-              height: '2rem',
-              width: '2rem',
-              filter: 'drop-shadow(0 0 10px rgba(147, 51, 234, 0.5))'
-            }} 
-          />
+          <div style={{
+            height: '2rem',
+            width: '2rem',
+            background: 'linear-gradient(135deg, #9333ea, #3b82f6)',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'white',
+            fontSize: '1rem',
+            fontWeight: 'bold',
+            filter: 'drop-shadow(0 0 10px rgba(147, 51, 234, 0.5))'
+          }}>
+            E
+          </div>
           <div style={{
             fontSize: '1.5rem',
             fontWeight: 'bold',
@@ -69,13 +74,13 @@ const Navbar: React.FC = () => {
             ElitePay
           </div>
         </div>
-        <div style={{
-          display: 'none',
-          gap: '2rem',
-          '@media (min-width: 768px)': {
-            display: 'flex'
-          }
-        }}>
+        <div 
+          className="nav-links"
+          style={{
+            display: 'none',
+            gap: '2rem'
+          }}
+        >
           {navItems.map((item) => (
             <motion.a
               key={item.label}

@@ -101,12 +101,14 @@ const Contact: React.FC = () => {
                 backdropFilter: 'blur(10px)'
               }}
               onFocus={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
-                e.target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
+                const target = e.target as HTMLInputElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
+                target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
               }}
               onBlur={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
-                e.target.style.boxShadow = 'none';
+                const target = e.target as HTMLInputElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
+                target.style.boxShadow = 'none';
               }}
             />
             <input
@@ -125,12 +127,14 @@ const Contact: React.FC = () => {
                 backdropFilter: 'blur(10px)'
               }}
               onFocus={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
-                e.target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
+                const target = e.target as HTMLInputElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
+                target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
               }}
               onBlur={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
-                e.target.style.boxShadow = 'none';
+                const target = e.target as HTMLInputElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
+                target.style.boxShadow = 'none';
               }}
             />
             <textarea
@@ -152,12 +156,14 @@ const Contact: React.FC = () => {
                 fontFamily: 'inherit'
               }}
               onFocus={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
-                e.target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
+                const target = e.target as HTMLTextAreaElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.6)';
+                target.style.boxShadow = '0 0 20px rgba(147, 51, 234, 0.3)';
               }}
               onBlur={(e) => {
-                e.target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
-                e.target.style.boxShadow = 'none';
+                const target = e.target as HTMLTextAreaElement;
+                target.style.border = '1px solid rgba(147, 51, 234, 0.3)';
+                target.style.boxShadow = 'none';
               }}
             />
             <motion.button

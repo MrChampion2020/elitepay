@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add responsive navigation styles */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex !important;
+  }
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
